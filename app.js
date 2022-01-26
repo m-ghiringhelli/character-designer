@@ -66,8 +66,9 @@ catchphraseButton.addEventListener('click', () => {
 });
 
 function displayStats() {
+    // call this function with the correct arguments
+    const statsString = makeStatsString(headCount, middleCount, bottomCount); 
     // change the text content of the reportEl to tell the user how many times they've changed each piece of the state
-    const statsString = makeStatsString(headCount, middleCount, bottomCount); // call this function with the correct arguments
     reportEl.textContent = statsString;
 }
 
