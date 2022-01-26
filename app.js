@@ -30,7 +30,6 @@ headDropdown.addEventListener('change', () => {
     displayStats();
 });
 
-
 middleDropdown.addEventListener('change', () => {
     // get the value of the middle dropdown
     const middle = middleDropdown.value;
@@ -41,7 +40,6 @@ middleDropdown.addEventListener('change', () => {
     // update the stats to show the new count (refactor to/call displayStats() to do this work)
     displayStats();
 });
-
 
 bottomDropdown.addEventListener('change', () => {
     // get the value of the bottom dropdown
