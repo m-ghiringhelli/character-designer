@@ -27,7 +27,7 @@ headDropdown.addEventListener('change', () => {
     // update the dom for the head (use style.backgroundImage on the bottomEl div instead of trying to set the .src -- it's NOT an img tag!)
     headEl.style.backgroundImage = `url('../assets/${head}-head.png')`;
     // update the stats to show the new count (refactor to/call displayStats() to do this work)
-
+    displayStats();
 });
 
 
@@ -39,6 +39,7 @@ middleDropdown.addEventListener('change', () => {
     // update the dom for the middle (NOTE: use style.backgroundImage on the middleEl div instead of trying to set the .src -- it's NOT an img tag!)
     middleEl.style.backgroundImage = `url('../assets/${middle}-middle.png')`;
     // update the stats to show the new count (refactor to/call displayStats() to do this work)
+    displayStats();
 });
 
 
@@ -50,6 +51,7 @@ bottomDropdown.addEventListener('change', () => {
     // update the dom for the bottom (NOTE use style.backgroundImage on the bottomEl div instead of trying to set the .src -- it's NOT an img tag!)
     bottomEl.style.backgroundImage = `url('../assets/${bottom}-pants.png')`;
     // update the stats to show the new count (refactor to/call displayStats() to do this work)
+    displayStats();
 });
 
 catchphraseButton.addEventListener('click', () => {
