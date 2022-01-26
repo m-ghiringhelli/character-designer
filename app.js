@@ -17,14 +17,16 @@ let middleCount = 0;
 let bottomCount = 0;
 
 // set state for all of the character's catchphrases
+let catchphrases = [];
 
 headDropdown.addEventListener('change', () => {
     // get the value of the head dropdown
-    headDropdown.value;
+    const head = headDropdown.value;
     // increment the head change count state
-    
+    headCount++;
     // update the dom for the head (use style.backgroundImage on the bottomEl div instead of trying to set the .src -- it's NOT an img tag!)
-
+    console.log(head);
+    headEl.style.backgroundImage = `url('../assets/${head}-head.png')`;
     // update the stats to show the new count (refactor to/call displayStats() to do this work)
 });
 
